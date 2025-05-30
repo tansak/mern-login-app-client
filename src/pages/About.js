@@ -34,7 +34,7 @@ function About() {
       <div className="form-container">
         <h2>About This App</h2>
         <p>This is a MERN stack login application built to demonstrate user authentication using JWT.</p>
-        <p>Developed by: Satish</p>
+        <p>Developed by: Rama</p>
         <p>Version: 1.0.0</p>
       </div>
     </div>

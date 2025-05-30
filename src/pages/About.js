@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-function Home() {
+function About() {
   const [user, setUser] = useState(null);
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -32,11 +32,13 @@ function Home() {
     <div>
       <Navbar />
       <div className="form-container">
-        <h2>Welcome, {user.name}!</h2>
-        <p>Email: {user.email}</p>
+        <h2>About This App</h2>
+        <p>This is a MERN stack login application built to demonstrate user authentication using JWT.</p>
+        <p>Developed by: Your Name</p>
+        <p>Version: 1.0.0</p>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default About;

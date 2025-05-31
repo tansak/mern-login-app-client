@@ -6,8 +6,8 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Clear JWT token
-    navigate('/'); // Redirect to login page
+    localStorage.removeItem('token');
+    navigate('/');
   };
 
   return (
@@ -16,6 +16,9 @@ function Navbar() {
       <ul className="navbar-links">
         <li>
           <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
           <Link to="/about">About</Link>

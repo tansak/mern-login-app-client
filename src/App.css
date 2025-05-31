@@ -12,7 +12,7 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 300px;
-  margin-top: 60px; /* Add margin to avoid overlap with navbar */
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -29,11 +29,17 @@
   margin-bottom: 5px;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
 }
 
 .form-group button {
@@ -50,10 +56,41 @@
   background-color: #0056b3;
 }
 
-.form-group a {
+.form-group a,
+.create-post-link {
   display: block;
   text-align: center;
   margin-top: 10px;
   color: #007bff;
   text-decoration: none;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.post h3 {
+  margin: 0 0 10px;
+}
+
+.post a,
+.post button {
+  margin-right: 10px;
+  color: #007bff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.post button.delete-button {
+  color: #dc3545;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
 }
